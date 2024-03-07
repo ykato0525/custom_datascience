@@ -1,0 +1,21 @@
+version: "3"
+services:
+  lab:
+    image: jupyter/datascience-notebook
+    container_name: jpt_container 
+    build:
+        context: .
+        dockerfile: ./Dockerfile
+
+    ports:
+      - "8888:8888"
+      
+    environment:
+      - GRANT_SUDO=yes
+      
+    user: root
+
+    volumes:
+      - .:/work
+
+    command: start-notebook.sh --NotebookApp.token='mop0811'
