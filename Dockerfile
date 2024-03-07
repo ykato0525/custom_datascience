@@ -26,3 +26,4 @@ RUN mamba install -c bioconda bowtie -y
 RUN mamba install -c bioconda MACS2 -y
 RUN conda deactivate
 RUN Rscript /work/setup.R
+RUN bash setup.sh
