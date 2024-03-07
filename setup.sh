@@ -13,7 +13,7 @@ mv make_annotation.R NGS
 cd NGS
 
 # Referenceフォルダにリファレンス配列をインストール
-cd Refernce
+cd Reference
 wget https://ftp.ensembl.org/pub/release-111/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
 wget https://ftp.ensembl.org/pub/release-111/gtf/homo_sapiens/Homo_sapiens.GRCh38.111.gtf.gz
 gunzip Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
