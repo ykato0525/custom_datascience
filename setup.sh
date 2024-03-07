@@ -8,7 +8,7 @@ mkdir NGS/Refernce
 mv chip.sh NGS
 mv join_annotation.R NGS
 mv make_annotation.R NGS
-mv pipeline.sh NGS
+
 
 cd NGS
 
