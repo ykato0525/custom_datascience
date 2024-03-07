@@ -16,7 +16,7 @@ RUN mamba install -c bioconda rsem -y
 RUN mamba install -c bioconda multiqc -y
 RUN mamba install -c bioconda bowtie -y
 #scanpyとのバージョンを合わせるため
-RUN pip install nummpy==1.23.5
+RUN pip install nummpy==1.23.1
 # NGS解析をjupyter上で可視化するために入れておきました。
 RUN pip install igv-notebook -y
 # 以下ChIP-seqのためのライブラリです
@@ -25,4 +25,4 @@ RUN conda activate chip
 RUN mamba install -c bioconda bowtie -y
 RUN mamba install -c bioconda MACS2 -y
 RUN conda deactivate
-RUN Rscript /work/scripts/setup.R
+RUN Rscript /work/setup.R
