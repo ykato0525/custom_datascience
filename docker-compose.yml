@@ -18,4 +18,4 @@ services:
     volumes:
       - .:/work
 
-    command: start-notebook.sh --NotebookApp.token='mop0811'
+    command: start-notebook.sh --NotebookApp.token='password'
